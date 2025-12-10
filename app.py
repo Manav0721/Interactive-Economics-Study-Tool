@@ -1,5 +1,4 @@
 import streamlit as st
-import PyPDF2
 import os
 from pathlib import Path
 import json
@@ -27,17 +26,17 @@ st.markdown("""
         padding: 20px;
         border-radius: 10px;
         margin: 10px 0;
-        color: #000000 !important;          /* <<< make text black */
+        color: #000000 !important;
     }
     .feature-box h3, .feature-box h4,
     .feature-box p, .feature-box li {
-        color: #000000 !important;          /* <<< headings + list text black */
+        color: #000000 !important;
     }
     .chat-message {
         padding: 15px;
         border-radius: 10px;
         margin: 10px 0;
-        color: #000000 !important;          /* chat text black */
+        color: #000000 !important;
     }
     .user-message {
         background-color: #E3F2FD;
@@ -58,8 +57,6 @@ st.markdown("""
 # Initialize session state
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
-if 'pdf_content' not in st.session_state:
-    st.session_state.pdf_content = ""
 if 'study_notes' not in st.session_state:
     st.session_state.study_notes = {}
 
