@@ -49,7 +49,7 @@
 
 **Step 1:** Install dependencies
 ```bash
-pip install streamlit PyPDF2
+pip install streamlit
 ```
 
 **Step 2:** Run the application
@@ -221,7 +221,6 @@ APP/
 
 - **Streamlit** - Web application framework
 - **Python 3.8+** - Core programming language
-- **PyPDF2** - PDF processing capabilities
 - **Custom Knowledge Base** - Curated economics content
 - **HTML/CSS** - Custom styling and UI components
 
@@ -244,7 +243,7 @@ streamlit run app.py --server.port 8502
 ### Issue: Module not found
 **Solution:** Install dependencies:
 ```bash
-pip install --upgrade streamlit PyPDF2
+pip install --upgrade streamlit
 ```
 
 ### Issue: White text not visible
@@ -375,7 +374,7 @@ If you encounter any issues:
 cd C:/Users/MANAV/Downloads/APP
 
 # Install dependencies (first time only)
-pip install streamlit PyPDF2
+pip install streamlit
 
 # Run the application
 streamlit run app.py
